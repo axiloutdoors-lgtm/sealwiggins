@@ -1,1 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Seal Wiggins</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+color:white;
+text-align:center;
+background:linear-gradient(-45deg,#0f2027,#203a43,#2c5364,#1c1c1c);
+background-size:400% 400%;
+animation:gradient 12s ease infinite;
+}
+
+@keyframes gradient{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+header{
+padding:120px 20px;
+}
+
+h1{
+font-size:70px;
+margin:0;
+}
+
+.tagline{
+font-size:22px;
+margin:15px 0;
+}
+
+button{
+padding:16px 40px;
+font-size:18px;
+margin:10px;
+border:none;
+border-radius:10px;
+cursor:pointer;
+background:#00ff9d;
+font-weight:bold;
+}
+
+section{
+padding:70px 20px;
+}
+
+.contract{
+background:#111;
+padding:20px;
+border-radius:10px;
+display:inline-block;
+font-size:14px;
+}
+
+.chart{
+width:90%;
+max-width:900px;
+margin:auto;
+border-radius:15px;
+overflow:hidden;
+}
+
+.card{
+background:#121212;
+padding:25px;
+border-radius:12px;
+margin:15px;
+display:inline-block;
+width:250px;
+}
+
+a{
+color:#00ff9d;
+font-weight:bold;
+text-decoration:none;
+}
+
+footer{
+background:#050505;
+padding:40px;
+}
+
+.seal{
+font-size:90px;
+animation:bounce 2s infinite;
+}
+
+@keyframes bounce{
+0%,100%{transform:translateY(0);}
+50%{transform:translateY(-20px);}
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="seal">🦭</div>
+
+<h1>SEAL WIGGINS</h1>
+
+<p class="tagline">
+The ocean's next meme coin 🌊🚀
+</p>
+
+<a href="https://dexscreener.com/solana/FLxH6eAsrjDGHQoUZuHEHcFrWtZWfCh9HXJZXozmDEU4">
+<button>View Chart</button>
+</a>
+
+<a href="https://t.me/sealwiggins22">
+<button>Join Telegram</button>
+</a>
+
+</header>
+
+<section>
+
+<h2>Contract Address</h2>
+
+<div class="contract" id="contract">
+FLxH6eAsrjDGHQoUZuHEHcFrWtZWfCh9HXJZXozmDEU4
+</div>
+
+<br>
+
+<button onclick="copyContract()">Copy Contract</button>
+
+</section>
+
+<section>
+
+<h2>Live Chart</h2>
+
+<div class="chart">
+
+<iframe
+height="500"
+width="100%"
+src="https://dexscreener.com/solana/FLxH6eAsrjDGHQoUZuHEHcFrWtZWfCh9HXJZXozmDEU4?embed=1">
+</iframe>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Tokenomics</h2>
+
+<div class="card">
+<h3>Supply</h3>
+<p>1 Billion</p>
+</div>
+
+<div class="card">
+<h3>Tax</h3>
+<p>0%</p>
+</div>
+
+<div class="card">
+<h3>Chain</h3>
+<p>Solana</p>
+</div>
+
+</section>
+
+<section>
+
+<h2>Community</h2>
+
+<p>
+<a href="https://x.com/sealwiggins">X / Twitter</a>
+</p>
+
+<p>
+<a href="https://t.me/sealwiggins22">Telegram</a>
+</p>
+
+</section>
+
+<footer>
+
+<p>© 2026 Seal Wiggins Coin</p>
+
+</footer>
+
+<script>
+
+function copyContract(){
+
+var text=document.getElementById("contract").innerText;
+
+navigator.clipboard.writeText(text);
+
+alert("Contract copied!");
+
+}
+
+</script>
+
+</body>
+</html>
